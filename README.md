@@ -1,11 +1,32 @@
-Practical 2
+Practical 2: Activity Life Cycle Demonstration
 
-AIM:Create Android Application to demonstrate functions of Activity Life Cycle and Basic UI.
+AIM:Create an Android Application to demonstrate functions of **Activity Life Cycle** and Basic UI.
 
-This Android app demonstrates the Activity Life Cycle by showing Toast or Log messages for methods like onCreate(), onStart(), onResume(), etc. It also includes a basic UI with a TextView and Button inside a ConstraintLayout, helping users understand activity states and simple interface design.
+This Android application demonstrates the Activity Life Cycle by showing how different lifecycle methods (onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy()) are invoked when the activity changes states. The app also includes a basic UI with elements such as TextView, Button, and Toast messages to display the current lifecycle state to the user. This helps beginners understand how Android manages activity transitions and how to design apps that respond correctly to state changes.
 
-![WhatsApp Image 2025-08-13 at 09 53 34_4752b6ef](https://github.com/user-attachments/assets/547c46e4-ed09-440c-98f7-05e9d954515b)
-![WhatsApp Image 2025-08-13 at 09 53 33_a614270f](https://github.com/user-attachments/assets/54559683-9ce6-43c7-a88a-0e3a240a10b9)
-![WhatsApp Image 2025-08-13 at 09 53 33_8b3ad3a8](https://github.com/user-attachments/assets/9a7c3980-d86c-4476-a67d-a12f4dfad4c1)
-<img width="1853" height="480" alt="image" src="https://github.com/user-attachments/assets/e91f5d3e-eb0c-409a-863f-3a79e9b1f8a2" />
+
+## 📱 Screenshots & Descriptions
+
+| Screenshot | Description |
+|------------|-------------|
+| <img width="390" height="888" alt="image" src="https://github.com/user-attachments/assets/904389f6-ae03-46da-8bfd-a7fa07742b87" /> | Activity resumed – `onResume()` called|
+| <img width="390" height="888" alt="image" src="https://github.com/user-attachments/assets/ee7ed3bf-4ff4-4160-866e-ded7582a378f" /> | Activity started – `onStart()` called |
+|<img width="390" height="888" alt="image" src="https://github.com/user-attachments/assets/4fdff725-112a-433e-94bc-f93c96aef282" />| Activity restarted – `onRestart()` followed by `onResume()` |
+| ![WhatsApp Image 2025-08-20 at 19 07 35_1175507d](https://github.com/user-attachments/assets/efda2809-5c9f-4063-8953-64dd9e839e61) | Logcat showing activity life cycle method calls sequence |
+
+
+
+## ⚙️ Activity Life Cycle Methods
+
+| Method       | Purpose |
+|--------------|---------|
+| `onCreate()` | Called when activity is first created. Initialize UI components here. |
+| `onStart()`  | Activity is becoming visible to the user. |
+| `onResume()` | Activity is now in the foreground and the user can interact with it. |
+| `onPause()`  | Activity is partially hidden; another activity is in the foreground. |
+| `onStop()`   | Activity is no longer visible to the user. |
+| `onRestart()`| Called after `onStop()`, before starting again. |
+| `onDestroy()`| Activity is destroyed and removed from memory. |
+
+
 
